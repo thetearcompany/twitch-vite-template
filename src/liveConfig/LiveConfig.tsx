@@ -6,7 +6,12 @@ function LiveConfig() {
       console.log("on Authorize!", auth.token);
     });
   }, []);
-  return <div>Hello, world. From Live Config Page</div>;
+
+  return (
+    <div style={{ backgroundColor: "white" }}>
+      Hello, world. From Live Config Page
+    </div>
+  );
 }
 
 export default LiveConfig;

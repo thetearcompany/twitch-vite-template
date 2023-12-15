@@ -6,7 +6,12 @@ function ViewerPanel() {
       console.log("on Authorize!", auth.token);
     });
   }, []);
-  return <div>Hello, world. From Viewer/Mobile Panel</div>;
+
+  return (
+    <div style={{ backgroundColor: "white" }}>
+      Hello, world. From Viewer/Mobile Panel
+    </div>
+  );
 }
 
 export default ViewerPanel;

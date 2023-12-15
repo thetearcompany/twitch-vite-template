@@ -7,7 +7,11 @@ function Config() {
     });
   }, []);
 
-  return <div>Hello, world. From Config Page</div>;
+  return (
+    <div style={{ backgroundColor: "white" }}>
+      Hello, world. From Config Page
+    </div>
+  );
 }
 
 export default Config;
