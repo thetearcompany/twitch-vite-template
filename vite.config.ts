@@ -5,10 +5,20 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "./", // Need this for twitch to load assets correctly from relative paths
   server: {
     port: 8080,
+    https: {
+      cert: './cert.pem',
+      key: './key.pem'
+    }
   },
   plugins: [react(), basicSsl()],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src')
+    }
+  },
   build: {
     modulePreload: {
       polyfill: false,

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 1,
+  "type": "panel",
+  "version": "0.1.0",
+  "name": "EmoScan",
+  "description": "Analizator emocji na czacie Twitch",
+  "author": "Your Name",
+  "panel_height": 500,
+  "permissions": ["chat:read"],
+  "files": {
+    "config": "config.html",
+    "live_config": "live_config.html",
+    "mobile": "mobile.html",
+    "panel": "panel.html"
+  },
+  "views": {
+    "config": {
+      "viewerUrl": "config.html"
+    },
+    "live_config": {
+      "viewerUrl": "live_config.html"
+    },
+    "mobile": {
+      "viewerUrl": "mobile.html"
+    },
+    "panel": {
+      "viewerUrl": "panel.html",
+      "height": 500,
+      "canLinkExternalContent": false
+    }
+  }
+} 

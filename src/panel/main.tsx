@@ -1,9 +1,32 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
-import ViewerPanel from "./ViewerPanel";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Indicator  from '@/Indicator';
+import '@/styles/index.css';
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+// Przykładowe dane do testów
+const testMessages = [
+  "Cześć wszystkim! 😊",
+  "Świetny stream! 😃",
+  "Co za niespodzianka! 😲",
+  "Ale super! 😄",
+  "Nie podoba mi się to 😡",
+  "Smutne to... 😢",
+  "Wow! 😯",
+  "Kappa Kappa Kappa",
+  "PogChamp",
+  "LUL",
+  ":)",
+  ":(",
+  "👿",
+  "😭",
+  "😃"
+];
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ViewerPanel />
-  </React.StrictMode>,
-);
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Emoscan - Panel Testowy</h1>
+      <Indicator chatData={testMessages} />
+    </div>
+  </React.StrictMode>
+); 
