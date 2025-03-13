@@ -5,6 +5,7 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 
 import tailwindcss from '@tailwindcss/postcss';
 import autoprefixer from 'autoprefixer';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -27,7 +28,7 @@ export default defineConfig({
   plugins: [react(), basicSsl()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src')
     }
   },
   build: {

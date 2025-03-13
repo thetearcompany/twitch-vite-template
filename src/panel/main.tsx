@@ -25,7 +25,6 @@ const testMessages = [
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Emoscan - Panel Testowy</h1>
       <Indicator chatData={testMessages} />
     </div>
   </React.StrictMode>

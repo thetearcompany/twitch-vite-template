@@ -1,10 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import LiveConfig from "./LiveConfig";
+import { Mobile } from "./Mobile";
 import "@/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <LiveConfig />
+    <Mobile />
   </React.StrictMode>,
-);
+); 
