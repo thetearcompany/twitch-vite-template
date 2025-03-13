@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Indicator  from '@/Indicator';
-import '@/styles/index.css';
+import Indicator  from '@/EmotionOverlay';
+import '@/styles/globals.css';
 
 // Przykładowe dane do testów
 const testMessages = [

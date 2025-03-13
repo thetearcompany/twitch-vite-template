@@ -3,6 +3,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import basicSsl from "@vitejs/plugin-basic-ssl";
 
+import tailwindcss from '@tailwindcss/postcss';
+import autoprefixer from 'autoprefixer';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "./", // Need this for twitch to load assets correctly from relative paths
@@ -12,6 +15,14 @@ export default defineConfig({
       cert: './cert.pem',
       key: './key.pem'
     }
+  },
+  css: {
+    postcss: {
+      plugins: [
+        tailwindcss,
+        autoprefixer,
+      ],
+    },
   },
   plugins: [react(), basicSsl()],
   resolve: {
